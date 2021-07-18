@@ -1,0 +1,142 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        #id1:hover,#id2:hover,#id3:hover,#id4:hover,#id5:hover,#id6:hover,#id7:hover,#id8:hover,#id9:hover{background:url(images/b2.gif) 0px 2px repeat-x;}
+        a:link{text-decoration:none;}
+        .logo{background-image:url(Images/logo.jpg)}
+        .menu{height: 37px;background: url(images/menu.gif) no-repeat;width: 168px;padding-top: 0px;}
+        .menu1{height: 37px;background: url(images/tit1.jpg) repeat-x ;width: 168px;padding-top: 0px;}
+        .animation{height: 37px;background: url(images/menu1.gif) ;width: 168px;padding-top: 0px;}
+        .margin{padding:15px}
+        .box1{background: url(images/tit1.jpg) top repeat-x ;height: 580px;padding-top: 10px;padding-left: 20px}
+    </style>
+    <script type="text/javascript" src="JS/JScript.js">
+    </script>
+    
+    
+</head>
+<body style="margin:0px;padding:0px;font-family:Arial">
+<%--        a:hover{background-color:Gray;font-weight:bold;font-size:medium;
+--%>    
+
+    <form id="form1" runat="server">
+    <table width="100%" cellpadding="0px" cellspacing="0px">
+        <tr style="height:100px" valign="top">
+            <td rowspan="3" style="width:110px;background-color:Black">
+                first Column
+            </td>
+            
+            <td colspan="3" class="logo">
+                
+            </td>
+            <td rowspan="3" style="width:110px;background-color:Black">
+               Last Column 
+            </td>
+        </tr>
+        
+        <tr style="height:100px" valign="top">
+            <td colspan="3" class="animation" align="center"><h1>H1 Hotel</h1>
+            <div id="newdiv" style="position:absolute;left:925px;top:180px">
+                    
+                
+            <asp:LinkButton ID="LinkButton1" runat="server" onclick="LinkButton1_Click" 
+                    Visible="False" CausesValidation="False">Logout</asp:LinkButton>
+               </div> 
+            </td>        
+        </tr>
+        
+        <tr style="height:600px" valign="top" >
+            
+            <td style="width:170px" class="menu1">
+            
+                <div id="Div11" style="height:35px;width:170px; vertical-align:middle" 
+                    class="menu">
+                    
+                </div>
+                <div id="id8" style="height:35px;width:170px; vertical-align:middle" 
+                    class="menu">
+                    <asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="~/Home.aspx" 
+                        Font-Bold="True" ForeColor="Black" CssClass="margin">Home</asp:HyperLink>
+                </div>
+                
+                <div id="id1" style="height:35px;width:170px; vertical-align:middle" 
+                    class="menu">
+                    <asp:HyperLink ID="HyperLink1" runat="server" CssClass="margin"
+                        NavigateUrl="~/Advance_Booking.aspx" Font-Bold="True" ForeColor="Black">Advance Booking</asp:HyperLink>
+                </div>
+                
+                <div id="id4" style="height:35px;width:170px;vertical-align:middle" class="menu">
+                    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Room_Tariff.aspx" 
+                        Font-Bold="True" ForeColor="Black" CssClass="margin">Room Tariff</asp:HyperLink>
+                </div>
+
+                <div id="id5" style="height:35px;width:170px;vertical-align:middle" class="menu">
+                    <asp:HyperLink ID="HyperLink5" runat="server"  CssClass="margin"
+                        NavigateUrl="~/Other_Facility.aspx" Font-Bold="True" ForeColor="Black">Other Facility</asp:HyperLink>
+                </div>
+
+                <div id="id6" style="height:35px;width:170px;vertical-align:middle" class="menu">
+                    <asp:HyperLink ID="HyperLink6" runat="server" CssClass="margin" NavigateUrl="~/Contact_Us.aspx" 
+                        Font-Bold="True" ForeColor="Black">Contact Us</asp:HyperLink>
+                </div>
+
+                <div id="id7" style="height:35px;width:170px;vertical-align:middle" class="menu">
+                    <asp:HyperLink ID="HyperLink7" runat="server" CssClass="margin" NavigateUrl="~/About_Us.aspx" 
+                        Font-Bold="True" ForeColor="Black">About Us</asp:HyperLink>
+                </div>
+                
+                <div id="id9" style="height:35px;width:170px;vertical-align:middle" class="menu">
+                    <asp:HyperLink ID="HyperLink8" runat="server" CssClass="margin" NavigateUrl="~/Login.aspx" 
+                        Font-Bold="True" ForeColor="Black">Login</asp:HyperLink>
+                </div>
+
+                <div id="id2" style="height:35px;width:170px;vertical-align:middle" class="menu">
+                    <asp:HyperLink ID="HyperLink2" runat="server"  CssClass="margin"
+                        NavigateUrl="~/Check_In.aspx" Font-Bold="True" ForeColor="Black">Check In</asp:HyperLink>
+                    <br />
+                </div>
+                
+                <div id="id3" style="height:35px;width:170px;vertical-align:middle" class="menu">
+                    <asp:HyperLink ID="HyperLink3" runat="server"  CssClass="margin"
+                        NavigateUrl="~/Check_Out.aspx" Font-Bold="True">Check Out</asp:HyperLink>
+                    <br />
+                </div>
+                
+            </td>
+            <td>
+                <div style="background: url(images/bottom.gif) no-repeat;margin:0px;padding:0px; height: 7px;"></div>
+                <div class="box1">
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </td>
+            <td  style="width:150px;height:700px" class="menu1"><center>
+                ><br />Discount on Summer Advance Booking
+                
+                <br /><br />
+                <div style="border-style:groove">
+                In this weekend enjoy DJ Party with dinner in Just Rs. 1200
+                </div>
+                <br /><br />
+                Will india make through <br />FINAL
+                
+                </center>
+                
+            </td>
+        </tr>
+        
+        
+    </table>
+    
+    </form>
+</body>
+</html>
+
